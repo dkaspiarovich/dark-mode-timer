@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: "Roboto";
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ---------- TIMER ---------- */
+
+.timer__block {
+  margin-top: 80px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.timer::before {
+  content: "";
+  position: absolute;
+  inset: -5px; /* управляет расстоянием рассеивания */
+  z-index: -1; /* располагает элемент позади основного */
+  background: linear-gradient(
+    #e66465,
+    #9198e5
+  ); /* здесь находится ваш градиент */
+  filter: blur(10px); /* управляет размытием */
+}
+
+.timer__inner {
+  width: 720px;
+  height: 290px;
+  border-radius: 10px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 180px;
+  color: #d9d9d9;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.buttons__inner {
+  margin-top: 70px;
+}
+
+.btn {
+  width: 200px;
+  height: 70px;
+  color: #d9d9d9;
+  background: black;
+  border: solid 1px #d9d9d9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-family: "Roboto";
+  position: relative;
+}
+
+.btn:hover {
+  border: none;
+}
+
+.btn:hover::before {
+  content: " ";
+  border: none;
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  background-color: #ffffff;
+  filter: blur(5px);
+}
+
+.button__all {
+  margin-top: -90px;
+}
+.button__start {
+  margin: 0 auto;
+}
+
+.button__stop {
+  float: right;
+  margin-top: -70px;
+}
+
+.button__pause {
+  margin-top: 20px;
+}
+
+/* ---------- LAP ---------- */
+
+.lap__block {
+  margin-top: 80px;
+}
+
+.lap__timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  border: 1px solid #d9d9d9;
+  width: 200px;
+  border-radius: 10px;
+  margin-right: 10px;
+  color: #808080;
+}
+
+.lap__inner {
+  display: flex;
+  justify-content: space-between;
+  color: #d9d9d9;
+}
+
+.button__lap .button__clear__lap {
+  width: 150px;
+}

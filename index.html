@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIMER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="timer__block">
+      <div class="container">
+        <div class="timer">
+          <div class="timer__inner">
+            <div class="timer__minutes">00</div>
+            :
+            <div class="timer__seconds">00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="buttons__block">
+      <div class="container">
+        <div class="buttons__inner">
+          <div class="button__start">
+            <button class="button__start btn">start</button>
+          </div>
+
+          <div class="button__all hidden">
+            <button class="button__pause btn">pause</button>
+            <button class="button__stop btn">stop</button>
+          </div>
+
+          <div class="lap__block hidden">
+            <div class="container">
+              <div class="lap__inner">
+                <button class="button__lap btn">lap</button>
+                <div class="lap__timer">
+                  <div class="lap__minutes">00</div>
+                  :
+                  <div class="lap__seconds">00</div>
+                </div>
+                <button class="button__clear__lap btn hidden">clear lap</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
